@@ -98,9 +98,20 @@ function productFilter () {
   }
 }
 
+function countProduct () {
+  document.querySelectorAll('.filter').forEach(element => {
+    let productType = element.href.split('/').pop()
+    let count = document.querySelectorAll(`.${productType}`).length
+    document.getElementsByClassName(
+      `${productType}-count`
+    )[0].innerHTML = `(${count})`
+  })
+}
+
 function main () {
   createNav()
   productFilter()
+  countProduct()
 }
 
 main()
