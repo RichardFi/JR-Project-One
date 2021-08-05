@@ -53,14 +53,17 @@ a {
 
 .main--SERVICE {
   background-image: url(assets/backgroundService.jpg);
+  animation: pageAnimation 1s linear forwards;
 }
 
 .main--ABOUT {
   background-image: url(assets/backgroundAbout.jpg);
+  animation: pageAnimation 1s linear forwards;
 }
 
 .main--CONTACT {
   background-image: url(assets/backgroundContact.jpg);
+  animation: pageAnimation 1s linear forwards;
   .container {
     background-color: rgba(0, 0, 0, 0.3);
   }

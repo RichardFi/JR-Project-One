@@ -5,8 +5,8 @@ function createNav () {
   changePage()
   changeNavItem()
 
-  document.querySelectorAll('.navbar__item').forEach(function (element) {
-    element.onclick = function (event) {
+  document.querySelectorAll('.navbar__item').forEach(element => {
+    element.onclick = event => {
       event.preventDefault()
 
       let to = event.target.getAttribute('href')
@@ -24,7 +24,6 @@ function createNav () {
 
   function changePage () {
     let className = 'page--active'
-    console.log(current)
     if (previous) {
       let previousPage = document.querySelector('#' + previous)
       previousPage.classList.remove(className)
@@ -55,8 +54,8 @@ function productFilter () {
 
   changeProduct()
   changeFilter()
-  document.querySelectorAll('.filter').forEach(function (element) {
-    element.onclick = function (event) {
+  document.querySelectorAll('.filter').forEach(element => {
+    element.onclick = event => {
       event.preventDefault()
 
       let to = event.target.getAttribute('href')
@@ -76,27 +75,25 @@ function productFilter () {
     let className = 'product--active'
 
     if (previous) {
-      document.querySelectorAll('.' + previous).forEach(function (element) {
+      document.querySelectorAll('.' + previous).forEach(element => {
         element.classList.remove(className)
       })
     }
 
-    document.querySelectorAll('.' + current).forEach(function (element) {
+    document.querySelectorAll('.' + current).forEach(element => {
       element.classList.add(className)
     })
-    /*     console.log(page)
-    page.classList.add(className) */
   }
 
   function changeFilter () {
     let className = 'filter--active'
 
     if (previous) {
-      let previousNavItem = document.querySelector('[href="' + previous + '"]')
+      let previousNavItem = document.querySelector(`[href="${previous}"]`)
       previousNavItem.classList.remove(className)
     }
 
-    let navItem = document.querySelector('[href="' + current + '"]')
+    let navItem = document.querySelector(`[href="${current}"]`)
     navItem.classList.add(className)
   }
 }
