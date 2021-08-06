@@ -51,6 +51,21 @@ a {
   }
 }
 
+.main--PLANT {
+  color: #000000;
+  background-image: none;
+  animation: pageAnimation 1s linear forwards;
+  .container {
+    background-color: #ffffff;
+  }
+  a {
+    color: #000000;
+  }
+  svg{
+    fill: #000000;
+  }
+}
+
 .main--SERVICE {
   background-image: url(assets/backgroundService.jpg);
   animation: pageAnimation 1s linear forwards;
@@ -82,7 +97,6 @@ a {
     flex-direction: row;
     flex-basis: 100%;
     
-
     .navbar__item {
       margin: 0 5px;
       flex-basis: calc(10% - 50px);
@@ -234,6 +248,22 @@ a {
       }
     }
   }
+
+  .plantpage{
+    display: flex;
+    flex-direction: row;
+    .description{
+      flex-basis: 10%;
+    }
+    .image{
+      flex-basis: 80%;
+      height:60vh;
+      background: url(assets/tropical3.png) center center no-repeat;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
   .servicepage {
     display: flex;
     flex-direction: row;
