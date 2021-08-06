@@ -79,7 +79,7 @@ function productFilter () {
         element.classList.remove(className)
       })
     }
-
+    console.log(current)
     document.querySelectorAll('.' + current).forEach(element => {
       element.classList.add(className)
     })
@@ -102,9 +102,7 @@ function countProduct () {
   document.querySelectorAll('.filter').forEach(element => {
     let productType = element.href.split('/').pop()
     let count = document.querySelectorAll(`.${productType}`).length
-    document.getElementsByClassName(
-      `${productType}-count`
-    )[0].innerHTML = `(${count})`
+    document.querySelector(`[href="${productType}"]`).innerHTML += `(${count})`
   })
 }
 
