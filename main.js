@@ -1,6 +1,6 @@
 function createNav () {
   let previous = ''
-  let current = 'ABOUT'
+  let current = 'SERVICE'
 
   changePage()
   changeNavItem()
