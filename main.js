@@ -18,7 +18,7 @@ function createNav () {
     element.onclick = event => {
       event.preventDefault()
 
-      let to = 'PLANT'
+      let to = `PLANT${element.id}`
       push(to)
       window.history.pushState(null, null, `#${current}`)
     }
