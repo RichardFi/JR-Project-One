@@ -14,18 +14,18 @@ a {
 .main {
   color: #ffffff;
   background-size: cover;
-  position:fixed;
+  position: fixed;
   top: 0;
-  bottom:0;
+  bottom: 0;
   svg {
     fill: #ffffff;
   }
   .container {
-    height:100vh;
-    width:100vw;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    overflow:scroll;
+    overflow: scroll;
   }
 }
 
@@ -148,9 +148,9 @@ a {
   display: flex;
   flex-basis: 80vh;
   flex-direction: column;
-  justify-content: center;
-  margin:0 80px;
+  margin: 0 80px;
   .homepage {
+    padding: 25vh 0;
     max-width: 1280px;
     .title {
       margin: 0;
@@ -161,7 +161,9 @@ a {
       margin: 30px 0;
     }
   }
+
   .plantspage {
+    padding: 10vh 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -188,7 +190,6 @@ a {
       flex-wrap: wrap;
       align-content: flex-start;
       overflow: auto;
-
       .product {
         flex-basis: 50%;
         width: 480px;
@@ -208,7 +209,7 @@ a {
           .price {
             color: #666666;
           }
-        }
+        } 
       }
       .product--active {
         display: flex;
@@ -251,23 +252,24 @@ a {
   .plantpage {
     display: flex;
     flex-direction: row;
+    padding: 10vh 0;
     .description {
       flex-basis: 20%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      h3{
-        color:#666666;
-        padding-bottom:14px;
-        margin:0;
+      h3 {
+        color: #666666;
+        padding-bottom: 14px;
+        margin: 0;
       }
-      h4{
-        font-size:2.5rem;
-        margin:0;
-        padding-bottom:25px;
+      h4 {
+        font-size: 2.5rem;
+        margin: 0;
+        padding-bottom: 25px;
       }
-      .price{
-        color:#666666;
+      .price {
+        color: #666666;
       }
     }
     .image {
@@ -305,6 +307,7 @@ a {
   }
 
   .servicepage {
+    padding: 15vh 0;
     display: flex;
     flex-direction: row;
     .service {
@@ -329,6 +332,7 @@ a {
     }
   }
   .contactpage {
+    padding: 25vh 0;
     margin-left: 100px;
     .title {
       margin: 0;
@@ -340,6 +344,7 @@ a {
     }
   }
   .aboutpage {
+    padding: 30vh 0;
     margin-left: 100px;
     display: flex;
     flex-direction: row;
@@ -375,7 +380,7 @@ a {
 }
 
 .footer {
-  bottom:0;
+  bottom: 0;
   text-align: center;
   opacity: 0.3;
 }

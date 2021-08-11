@@ -202,13 +202,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0 80px;
 }
 
 .pages .homepage {
+  padding: 25vh 0;
   max-width: 1280px;
 }
 
@@ -223,6 +221,7 @@ a {
 }
 
 .pages .plantspage {
+  padding: 10vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,6 +346,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  padding: 10vh 0;
 }
 
 .pages .plantpage .description {
@@ -407,6 +407,7 @@ a {
 }
 
 .pages .servicepage {
+  padding: 15vh 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,6 +443,7 @@ a {
 }
 
 .pages .contactpage {
+  padding: 25vh 0;
   margin-left: 100px;
 }
 
@@ -456,6 +458,7 @@ a {
 }
 
 .pages .aboutpage {
+  padding: 30vh 0;
   margin-left: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
