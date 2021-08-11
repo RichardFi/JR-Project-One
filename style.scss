@@ -14,16 +14,18 @@ a {
 .main {
   color: #ffffff;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
+  position:fixed;
+  top: 0;
+  bottom:0;
   svg {
     fill: #ffffff;
   }
   .container {
-    padding: 80px 70px;
+    height:100vh;
+    width:100vw;
     display: flex;
     flex-direction: column;
+    overflow:scroll;
   }
 }
 
@@ -84,7 +86,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 80px 70px 0 70px;
   .logo {
     width: 100px;
   }
@@ -147,6 +149,7 @@ a {
   flex-basis: 80vh;
   flex-direction: column;
   justify-content: center;
+  margin:0 80px;
   .homepage {
     max-width: 1280px;
     .title {
@@ -372,6 +375,7 @@ a {
 }
 
 .footer {
+  bottom:0;
   text-align: center;
   opacity: 0.3;
 }
