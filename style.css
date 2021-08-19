@@ -137,7 +137,7 @@ a {
 }
 
 .nav .nav__left .nav__items .navbar__item {
-  margin: 0 30px;
+  margin: 0 5px;
   -ms-flex-preferred-size: calc(10% - 50px);
       flex-basis: calc(10% - 50px);
   font-weight: 600;
@@ -242,7 +242,7 @@ a {
 .pages .plantspage .filters .title {
   margin: 30px 0;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .pages .plantspage .filters .filter {
@@ -419,6 +419,7 @@ a {
 .pages .servicepage .service {
   -ms-flex-preferred-size: 33%;
       flex-basis: 33%;
+  margin: 0 10px;
 }
 
 .pages .servicepage .service .value {
@@ -517,6 +518,102 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+  .pages {
+    margin: 20px;
+  }
+  .pages .homepage {
+    padding: 15vh 0;
+  }
+  .pages .homepage .title {
+    font-size: 3rem;
+  }
+  .pages .plantspage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pages .plantspage .filters {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+  }
+  .pages .plantspage .filters .title {
+    font-size: 0.9rem;
+    margin: 0 5px;
+  }
+  .pages .plantspage .filters .filter {
+    margin: 0 5px;
+    font-size: 0.9rem;
+  }
+  .pages .plantspage .products {
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
+  }
+  .pages .plantspage .products .product {
+    width: 250px;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+  }
+  .pages .servicepage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pages .servicepage .service .value {
+    font-size: 3rem;
+    line-height: 4.2rem;
+    margin: 15px 0;
+  }
+  .pages .servicepage .service .title {
+    margin: 15px 0;
+  }
+  .pages .servicepage .service .description {
+    margin: 15px 0;
+  }
+  .pages .aboutpage {
+    margin: 0;
+    padding: 100px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pages .aboutpage .title {
+    padding: 15px 0;
+    font-size: 3rem;
+  }
+  .pages .aboutpage .text {
+    font-size: 0.9rem;
+    padding: 5px 0;
+  }
+  .pages .contactpage {
+    margin: 0;
+    padding: 100px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pages .contactpage .title {
+    padding: 15px 0;
+    font-size: 3rem;
+  }
+  .pages .contactpage .email {
+    padding: 15px 0;
+  }
+  .pages .contactpage .phone {
+    padding: 15px 0;
+  }
   .nav {
     margin: 0;
     z-index: 1;
