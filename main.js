@@ -7,6 +7,7 @@ function createNav () {
   document.querySelectorAll('.navbar__item').forEach(element => {
     element.onclick = event => {
       event.preventDefault()
+      document.querySelector('#menu').checked = false
 
       let to = event.target.getAttribute('href')
       push(to)
@@ -116,13 +117,19 @@ function countProduct () {
   })
 }
 
-function showPlantInformation () {}
+function closeHamburgerMenu () {
+  document.querySelector('.pages').onclick = event => {
+    event.preventDefault()
+    document.querySelector('#menu').checked = false
+  }
+
+}
 
 function main () {
   createNav()
   productFilter()
   countProduct()
-  showPlantInformation()
+  closeHamburgerMenu()
 }
 
 main()
